@@ -1,7 +1,7 @@
 import Image from "next/image";
 import StarIcon from "@/assets/icons/star.svg";
-import {  FaWordpress } from "react-icons/fa";
-import {  SiGoogleanalytics } from "react-icons/si";
+import { FaWordpress } from "react-icons/fa";
+import { SiGoogleanalytics } from "react-icons/si";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import IMGfilme1 from "@/assets/images/Meufilme.jpg";
@@ -33,7 +33,6 @@ const whatIDo = [
   },
 ];
 
-
 const toolboxItems = [
   { title: "JavaScript", iconType: FaJsSquare },
   { title: "HTML5", iconType: FaHtml5 },
@@ -63,7 +62,6 @@ const hobbies = [
   { title: "Edição de Vídeos", emoji: "🎬" }, 
 ];
 
-
 export const AboutSection = () => {
   return (
     <div className="py-20 flex flex-col items-center font-sans" data-aos="fade-up" data-aos-easing="ease-out-cubic" id="sobremim">
@@ -75,28 +73,19 @@ export const AboutSection = () => {
     />
     
     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
-      <Card 
-        className="transition-all duration-300 hover:scale-[1.02]"
-        data-aos="fade-up" data-aos-duration="1200"
-      >
+      <Card data-aos="fade-up" data-aos-duration="1200">
         <CardHeader title="Meus Filmes" description="Veja quais os melhores filmes ;)" />
         <div className="flex justify-center gap-4 mt-8">
           <Image src={IMGfilme1} alt="Movie1" className="w-[230px] h-[300px] rounded-lg shadow-lg" data-aos="zoom-in" data-aos-duration="1400"/>
           <Image src={IMGfilme2} alt="Movie2" className="w-[230px] h-[300px] rounded-lg shadow-lg" data-aos="zoom-in" data-aos-duration="1600"/>
         </div>
       </Card>
-      <Card 
-        className="transition-all duration-300 hover:scale-[1.02]"
-        data-aos="fade-up" data-aos-duration="1200"
-      >
+      <Card data-aos="fade-up" data-aos-duration="1200">
         <CardHeader title="Minhas Tecnologias" description="Explore as tecnologias que utilizo no meu dia a dia!" />
         <Toolbox toolboxItems={toolboxItems} className="mt-6" data-aos="fade-in" data-aos-duration="1400"/>
       </Card>
     
-      <Card 
-        className="transition-all duration-300 hover:scale-[1.02]"
-        data-aos="fade-up" data-aos-duration="1200"
-      >
+      <Card data-aos="fade-up" data-aos-duration="1200">
         <CardHeader title="Por trás do código" description="Explore meus interesses" />
         <div className="flex flex-wrap gap-4 justify-center mt-12" data-aos="zoom-in" data-aos-duration="1400">
           {hobbies.map((hobby) => (
@@ -108,10 +97,7 @@ export const AboutSection = () => {
         </div>
       </Card>
   
-      <Card 
-        className="transition-all duration-300 hover:scale-[1.02]"
-        data-aos="fade-up" data-aos-duration="1200"
-      >
+      <Card data-aos="fade-up" data-aos-duration="1200">
         <CardHeader title="Meus Trabalhos" description="Tudo que eu faço!" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 cursor-pointer mt-14">
           {whatIDo.map((item, index) => (
@@ -132,7 +118,5 @@ export const AboutSection = () => {
       </Card>
     </div>
   </div>
-  
   );
 };
-
