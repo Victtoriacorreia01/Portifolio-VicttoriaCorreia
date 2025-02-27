@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    :root {
+        --font-sans: 'Poppins', sans-serif;
+        --font-serif: 'Merriweather', serif;
+
+      }
+      
+    
+
+    .nav-item {
+        @apply px-4 py-1.5 rounded-full text-gray-600 text-sm font-semibold hover:bg-white/10 hover:text-red-500 transition duration-300
+    }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.fadeOut {
+  animation: fadeOut 1.5s ease-in forwards;
+}
