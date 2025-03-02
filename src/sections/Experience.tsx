@@ -1,10 +1,10 @@
 export const ExperienceEducation = () => {
   return (
-    <div className="bg-gradient-to-b from-white to-red-50 py-14 px-8" data-aos="fade-up" id="experiencia">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="bg-gradient-to-b from-white to-red-50 py-10 px-4 md:py-14 md:px-8" data-aos="fade-up" id="experiencia">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
         {/* Educação */}
         <div data-aos="fade-right">
-          <h2 className="text-2xl font-semibold text-red-800 mb-6 text-center md:text-left">Educação</h2>
+          <h2 className="text-2xl font-semibold text-red-800 mb-6 text-center">Educação</h2>
           <div className="space-y-5">
             {[
               { year: "2024", title: "Análise e Desenvolvimento de Sistemas", place: "Unichristus - Fortaleza (Em andamento)" },
@@ -18,7 +18,7 @@ export const ExperienceEducation = () => {
             ].map((edu, index) => (
               <div
                 key={index}
-                className="bg-white p-5 rounded-lg shadow-md border-l-4 border-red-600"
+                className="bg-white p-4 md:p-5 rounded-lg shadow-md border-l-4 border-red-600 text-sm md:text-base max-w-xs mx-auto md:max-w-full"
                 data-aos="zoom-in"
               >
                 <h3 className="text-lg font-medium text-red-800">{edu.title}</h3>
@@ -31,7 +31,7 @@ export const ExperienceEducation = () => {
 
         {/* Experiência */}
         <div data-aos="fade-left">
-          <h2 className="text-2xl font-semibold text-red-800 mb-6 text-center md:text-left">Experiências</h2>
+          <h2 className="text-2xl font-semibold text-red-800 mb-6 text-center">Experiências</h2>
           <div className="space-y-5">
             {[
               { 
@@ -72,7 +72,7 @@ export const ExperienceEducation = () => {
             ].map((exp, index) => (
               <div
                 key={index}
-                className="bg-white p-5 rounded-lg shadow-md border-l-4 border-yellow-500"
+                className="bg-white p-4 md:p-5 rounded-lg shadow-md border-l-4 border-yellow-600 text-sm md:text-base max-w-xs mx-auto md:max-w-full"
                 data-aos="zoom-in"
               >
                 <h3 className="text-lg font-medium text-yellow-700">{exp.title}</h3>

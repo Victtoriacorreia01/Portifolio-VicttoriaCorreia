@@ -23,7 +23,7 @@ const portfolioProjects = [
     image: darkSaasLandingPage,
   },
   {
-    company: "Milk-Infraestrutura de pagamentos",
+    company: "Milk",
     year: "2024",
     title: "",
     results: [
@@ -51,7 +51,7 @@ const portfolioProjects = [
     year: "2023",
     title: "",
     results: [
-      { title: "Informações compartilhadas entre diferentes componentes" },
+      { title: "Context API do React" },
       { title: "React.js" },
       { title: "Context API" },
     ],
@@ -63,7 +63,7 @@ const portfolioProjects = [
 export const ProjectsSection = () => {
   useEffect(() => {
     AOS.init({
-      once: true,  
+      once: true,
       offset: 120,
       duration: 3000,
       easing: "ease-in-out",
@@ -87,10 +87,9 @@ export const ProjectsSection = () => {
             <div
               key={project.title}
               className="bg-white rounded-2xl relative z-0 overflow-hidden shadow-md flex flex-col sm:flex-row items-center sm:items-start gap-4 p-5"
-              data-aos="fade-up" // Adicionando animação de fade-up
-              data-aos-delay={index * 100} // Atraso baseado na ordem dos projetos
+              data-aos="fade-up" 
+              data-aos-delay={index * 100}
             >
-              {/* Container de Texto */}
               <div className="flex-1">
                 <div
                   className="bg-gradient-to-r from-red-500 to-red-800 inline-flex font-bold
@@ -107,7 +106,7 @@ export const ProjectsSection = () => {
                 <ul className="flex flex-col gap-2 sm:gap-3 mt-3 sm:mt-4">
                   {project.results.map((result, index) => (
                     <li key={index} className="flex gap-2 text-xs sm:text-sm text-black">
-                      <CheckCircleIcon className="size-4 sm:size-5" />
+                      <CheckCircleIcon className="size-4 sm:size-4" />
                       <span>{result.title}</span>
                     </li>
                   ))}
@@ -119,9 +118,7 @@ export const ProjectsSection = () => {
                   </button>
                 </a>
               </div>
-
-              {/* Imagem ao lado (ajuste no espaçamento) */}
-              <div className="flex-1 mt-6 sm:mt-10" data-aos="fade-left">
+              <div className="flex-1 mt-6 sm:mt-20" data-aos="fade-left">
                 <Image
                   src={project.image}
                   alt={project.title}
