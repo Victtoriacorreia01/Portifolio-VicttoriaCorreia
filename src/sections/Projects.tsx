@@ -75,11 +75,11 @@ export const ProjectsSection = () => {
     <section className="pb-16" id="projetos">
       <div className="container">
         <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-red-500 to-red-800 text-transparent bg-clip-text text-center">
+          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-red-500 to-red-800 text-transparent bg-clip-text text-center mt-10">
             Resultados Reais
           </p>
         </div>
-        <h2 className="font-bold text-3xl text-center mt-6 text-black">
+        <h2 className="font-bold text-3xl text-center mt-6 text-black ">
           Meus Projetos
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

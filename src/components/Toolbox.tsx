@@ -20,7 +20,7 @@ export const Toolbox = ({
             key={item.title}
           >
             <TechIcon component={item.iconType} />
-            <span className="font-semibold text-gray-700">{item.title}</span>
+            <span className="font-semibold text-gray-700 lg:text-sm">{item.title}</span>
           </div>
         ))}
       </div>

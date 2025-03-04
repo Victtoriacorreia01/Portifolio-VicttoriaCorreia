@@ -10,8 +10,8 @@ interface SectionHeaderProps {
         <span className="text-1xl uppercase bg-gradient-to-r from-red-500 to-red-800 bg-clip-text text-transparent tracking-wide font-semibold">
           {eyebrow}
         </span>
-        <h2 className="text-3xl font-bold text-gray-900 mt-2">{title}</h2>
-        <p className="text-gray-600 mt-2">{description}</p>
+        <h2 className="lg:text-3xl sm:text-2xl font-bold text-gray-900 mt-2">{title}</h2>
+        <p className="text-gray-600 mt-2 sm:text-1xl ">{description}</p>
       </div>
     );
   };
