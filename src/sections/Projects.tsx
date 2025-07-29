@@ -1,28 +1,52 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import darkSaasLandingPage from "@/assets/images/projeto1.png";
 import lightSaasLandingPage from "@/assets/images/Milk.png";
 import aiStartupLandingPage from "@/assets/images/projeto4.png";
 import aiStartupLanding from "@/assets/images/carrinho react.png";
 import ziaraImage from "@/assets/images/ziara.png";
 import apreceImage from "@/assets/images/aprece.png";
+import nutriproImage from "@/assets/images/Nutripro.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 
 const portfolioProjects = [
   {
-    company: "Login Page",
-    year: "2023",
+    company: "Ziara - E-commerce Full Stack",
+    year: "2024",
     title: "",
     results: [
-      { title: "HTML, CSS e JavaScript" },
-      { title: "Inteiramente em inglês" },
-      { title: "Totalmente responsivo" },
+      { title: "React.js com integração via Axios" },
+      { title: "Autenticação com JWT e persistência com localStorage" },
+      { title: "API RESTful com Spring Boot (parceria com Ariel Rodrigues)" },
     ],
-    link: "https://pagina-de-login-liart.vercel.app/",
-    image: darkSaasLandingPage,
+    link: "https://www.linkedin.com/posts/victtoria-correia-3268v_reactjs-springboot-fullstack-activity-7340827643543457793-iAuF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKyFE4BAK5o3GCr2vdZFBZiXDtiF1cdAn0",
+    image: ziaraImage,
+  },
+  {
+    company: "APRECE - Turismo no Ceará",
+    year: "2025",
+    title: "",
+    results: [
+      { title: "WordPress com Elementor" },
+      { title: "Identidade visual personalizada para turismo" },
+      { title: "Arquitetura da informação e navegação intuitiva" },
+    ],
+    link: "",
+    image: apreceImage,
+  },
+  {
+    company: "NutriPro - Clínica de Nutrição",
+    year: "2025",
+    title: "",
+    results: [
+      { title: "WordPress com Elementor Pro" },
+      { title: "Design visual profissional e responsivo" },
+      { title: "Integração com agendamento e navegação intuitiva" },
+    ],
+    link: "",
+    image: nutriproImage,
   },
   {
     company: "Milk",
@@ -60,30 +84,7 @@ const portfolioProjects = [
     link: "https://carrinho-react-theta.vercel.app/",
     image: aiStartupLanding,
   },
-  {
-    company: "Ziara - E-commerce Full Stack",
-    year: "2024",
-    title: "",
-    results: [
-      { title: "React.js com integração via Axios" },
-      { title: "Autenticação com JWT e persistência com localStorage" },
-      { title: "API RESTful com Spring Boot (parceria com Ariel Rodrigues)" },
-    ],
-    link: "https://www.linkedin.com/posts/victtoria-correia-3268v_reactjs-springboot-fullstack-activity-7340827643543457793-iAuF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKyFE4BAK5o3GCr2vdZFBZiXDtiF1cdAn0",
-    image: ziaraImage,
-  },
-  {
-    company: "APRECE - Turismo no Ceará",
-    year: "2025",
-    title: "",
-    results: [
-      { title: "WordPress com Elementor" },
-      { title: "Identidade visual personalizada para turismo" },
-      { title: "Arquitetura da informação e navegação intuitiva" },
-    ],
-    link: "",
-    image: apreceImage,
-  },
+  
 ];
 
 export const ProjectsSection = () => {
