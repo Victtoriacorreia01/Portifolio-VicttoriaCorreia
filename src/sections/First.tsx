@@ -33,7 +33,7 @@ export const FirstSection = () => {
           </h1>
 
           <p className="mt-3 text-gray-600 max-w-xs sm:max-w-md lg:max-w-2xl text-sm sm:text-sm lg:text-sm" data-aos="fade-up" data-aos-delay="1200">
-            Sou Victtoria Correia. Desenvolvedora web e minha missão <br /> é entregar dedicação em tudo que faço!
+            Sou Victtoria Correia! Desenvolvedora web com a missão <br /> de entregar dedicação e qualidade em meus projetos e trabalhos. 
           </p>
 
           <div className="mt-5 sm:mt-7 lg:mt-10 flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="1400">

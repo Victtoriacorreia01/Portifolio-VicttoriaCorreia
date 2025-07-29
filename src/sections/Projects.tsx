@@ -5,6 +5,8 @@ import darkSaasLandingPage from "@/assets/images/projeto1.png";
 import lightSaasLandingPage from "@/assets/images/Milk.png";
 import aiStartupLandingPage from "@/assets/images/projeto4.png";
 import aiStartupLanding from "@/assets/images/carrinho react.png";
+import ziaraImage from "@/assets/images/ziara.png";
+import apreceImage from "@/assets/images/aprece.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -58,6 +60,30 @@ const portfolioProjects = [
     link: "https://carrinho-react-theta.vercel.app/",
     image: aiStartupLanding,
   },
+  {
+    company: "Ziara - E-commerce Full Stack",
+    year: "2024",
+    title: "",
+    results: [
+      { title: "React.js com integração via Axios" },
+      { title: "Autenticação com JWT e persistência com localStorage" },
+      { title: "API RESTful com Spring Boot (parceria com Ariel Rodrigues)" },
+    ],
+    link: "https://www.linkedin.com/posts/victtoria-correia-3268v_reactjs-springboot-fullstack-activity-7340827643543457793-iAuF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEKyFE4BAK5o3GCr2vdZFBZiXDtiF1cdAn0",
+    image: ziaraImage,
+  },
+  {
+    company: "APRECE - Turismo no Ceará",
+    year: "2025",
+    title: "",
+    results: [
+      { title: "WordPress com Elementor" },
+      { title: "Identidade visual personalizada para turismo" },
+      { title: "Arquitetura da informação e navegação intuitiva" },
+    ],
+    link: "",
+    image: apreceImage,
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -85,7 +111,7 @@ export const ProjectsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
           {portfolioProjects.map((project, index) => (
             <div
-              key={project.title}
+              key={project.company + index}
               className="bg-white rounded-2xl relative z-0 overflow-hidden shadow-md flex flex-col sm:flex-row items-center sm:items-start gap-4 p-5"
               data-aos="fade-up" 
               data-aos-delay={index * 100}
@@ -121,7 +147,7 @@ export const ProjectsSection = () => {
               <div className="flex-1 mt-6 sm:mt-20" data-aos="fade-left">
                 <Image
                   src={project.image}
-                  alt={project.title}
+                  alt={project.title || project.company}
                   className="w-full h-auto rounded-lg"
                 />
               </div>

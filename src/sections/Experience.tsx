@@ -7,14 +7,17 @@ export const ExperienceEducation = () => {
           <h2 className="text-2xl font-semibold text-red-800 mb-6 text-center">Educação</h2>
           <div className="space-y-5">
             {[
-              { year: "2024", title: "Análise e Desenvolvimento de Sistemas", place: "Unichristus - Fortaleza (Em andamento)" },
-              { year: "2024", title: "Testes de Unidade em Aplicações React", place: "Frontend Ceará" },
-              { year: "2023", title: "React.js", place: "Alura" },
-              { year: "2023", title: "JavaScript", place: "Alura" },
-              { year: "2023", title: "Figma - UI/UX", place: "Alura" },
-              { year: "2023", title: "Python - Curso em Vídeo & Alura", place: "" },
-              { year: "2023", title: "HTML5 e CSS", place: "Alura" },
-              { year: "2018", title: "Ensino Médio Completo", place: "Colégio 7 de Setembro" },
+              { year: "2024", title: "Análise e Desenvolvimento de Sistemas", place: "Unichristus - Fortaleza (4º semestre • Em andamento)" },
+  { year: "2024", title: "Desenvolvedora Full Stack", place: "Formação Intensiva com foco em projetos reais (50h)" },
+  { year: "2024", title: "Testes com Jest e React Testing Library", place: "Frontend Ceará" },
+  { year: "2024", title: "MySQL e Modelagem de Banco de Dados", place: "Curso Completo com Práticas SQL (20h)" },
+  { year: "2023", title: "React.js Avançado", place: "Alura • 33h" },
+  { year: "2023", title: "JavaScript Completo", place: "Alura • 74h de conteúdo prático e moderno" },
+  { year: "2023", title: "UI/UX Design no Figma", place: "Componentes, protótipos e Design Visual (20h)" },
+  { year: "2023", title: "Python para Ciência de Dados", place: "Curso em Vídeo & Alura • 30h" },
+  { year: "2023", title: "HTML5 e CSS Responsivo", place: "Projetos Semânticos com Flexbox e Grid" },
+  { year: "2023", title: "WordPress & Elementor", place: "Criação de sites profissionais (62h)" },
+  { year: "2018", title: "Ensino Médio Completo", place: "Colégio 7 de Setembro" },
             ].map((edu, index) => (
               <div
                 key={index}
@@ -34,40 +37,35 @@ export const ExperienceEducation = () => {
           <h2 className="text-2xl font-semibold text-red-800 mb-6 text-center">Experiências</h2>
           <div className="space-y-5">
             {[
-              { 
-                year: "2024", 
-                title: "Estágio - Obras Almeida", 
-                description: "Desenvolvimento da interface de um sistema de cadastro de obras utilizando as tecnologias Next.js, Tailwind CSS, TypeScript e integração de APIs." 
+              {
+                year: "2025",
+                title: "Site Institucional APRECE – Turismo no Ceará",
+                description: "Desenvolvimento front-end freelancer com WordPress & Elementor, com foco em arquitetura da informação clara, navegação intuitiva e identidade visual para promoção do turismo municipal."
               },
-              { 
-                year: "2024", 
-                title: "E-commerce Completo", 
-                description: "Projeto acadêmico com React.js, Java e MySQL." 
+              {
+                year: "2025",
+                title: "Ziara - Plataforma de E-commerce Full Stack",
+                description: "SPA construída com React.js, integração com API REST em Java (Spring Boot), gerenciamento de estado com Context API, autenticação JWT, localStorage para persistência, rotas protegidas com react-router-dom, formulários com validação e componente modularizado. Projeto em parceria com Ariel Rodrigues."
               },
-              { 
-                year: "2024", 
-                title: "Carrinho de Compras", 
-                description: "Implementação com Context API para compartilhamento de estados." 
+              {
+                year: "2024",
+                title: "Estágio - Obras Almeida",
+                description: "Desenvolvimento da interface de um sistema de cadastro de obras utilizando as tecnologias Next.js, Tailwind CSS, TypeScript e integração de APIs."
               },
-              { 
-                year: "2024", 
-                title: "Landing Page para Leads", 
-                description: "Aplicação Next.js com API para envio de e-mails e validação com Formik/Yup." 
+              {
+                year: "2024",
+                title: "Carrinho de Compras",
+                description: "Implementação com Context API para compartilhamento de estados."
               },
-              { 
-                year: "2024", 
-                title: "Cadastro de Fornecedores", 
-                description: "Módulo para gestão de fornecedores com validações e design responsivo." 
+              {
+                year: "2024",
+                title: "Experiência com Figma",
+                description: "Criação de protótipos e wireframes interativos, design de interfaces intuitivas e colaboração com desenvolvedores para implementação."
               },
-              { 
-                year: "2023", 
-                title: "Landing Pages & E-commerce", 
-                description: "Criação de interfaces responsivas com HTML, CSS e JS puro." 
-              },
-              { 
-                year: "2024", 
-                title: "Experiência com Figma", 
-                description: "Criação de protótipos e wireframes interativos, design de interfaces intuitivas e colaboração com desenvolvedores para implementação." 
+              {
+                year: "2024",
+                title: "Landing Page com Integração de E-mails e Validação",
+                description: "Landing page moderna com Next.js, Formik/Yup para validação de campos, integração com API de e-mails e layout responsivo com foco em conversão."
               }
             ].map((exp, index) => (
               <div
